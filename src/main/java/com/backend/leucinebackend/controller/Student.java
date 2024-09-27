@@ -17,7 +17,7 @@ public class Student {
     @Autowired
     private StudentProfileRepository studentProfileRepository;
 
-   
+    @CrossOrigin(origins = "http://localhost:5173")
     @GetMapping("/student")
     public List<User> getAllUsers() {
         try {
